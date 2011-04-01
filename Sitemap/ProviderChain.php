@@ -10,7 +10,6 @@ class ProviderChain implements Provider
 
     public function add(Provider $provider)
     {
-        var_dump(\get_class($provider));
         $this->providers[] = $provider;
     }
 
