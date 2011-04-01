@@ -67,5 +67,6 @@ class UrlRepository extends DocumentRepository implements UrlRepositoryInterface
             $this->dm->detach($url);
         }
         $this->urlsToRemove = array();
+        $this->dm->clear();
     }
 }
